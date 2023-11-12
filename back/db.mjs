@@ -1,8 +1,8 @@
 const db = [
     {
         id: 1,
-        username : 'testuser1',
-        email : 'testuser1@gmail.com',
+        username : 'leechi',
+        email : 'leechi@gmail.com',
         password : '1111'
     },{
         id: 2,

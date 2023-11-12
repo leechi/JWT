@@ -11,12 +11,13 @@ dotenv.config();
 app.use(express.json());
 // 쿠키를 사용해서 jwt를 사용할 예정
 app.use(cookieParser());
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST'],
-    // 쿠키를 사용하기 위함이기 때문에 credentials를 사용
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST"],
     credentials: true,
-}));
+  })
+);
 
 app.post('/login', login);
 app.get('/accesstoken', accessToken);
